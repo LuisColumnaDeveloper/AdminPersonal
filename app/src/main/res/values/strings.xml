@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">AdminPersonal</string>
+
+    <string name="label_scan">Coloca el código en el centro del recuadro</string>
+    <string name="text_header">Text</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="loginActivity">Login</string>
+    <string name="sign_in">Ingresar</string>
+    <string name="flexible_title">Luis Miguel Columna Delgadillo</string>
+
+    <string name="nombrePersonal">Nombre Completo Completo</string>
+    <string name="numEmpleado_Personal">Número de empleado</string>
+    <string name="area_personal">Área</string>
+    <string name="cargo_personal">Cargo</string>
+    <string name="button_enviar">Enviar</string>
+
+    <string name="observacion">Observación</string>
+    <string name="descripcion">Descripción</string>
+
+    <!--INCIDENCIA-->
+    <string name="uploadingIncidencia">Subiendo Incidencia</string>
+    <string name="upload_success">Incidencia guardada correctamente</string>
+
+
+    <!-- Email -->
+    <string name="email_subject">MagicalCamera 5.0.5 Librería de Android</string>
+    <string name="email_choose">Elegir correo cliente</string>
+    <string name="email_title">Compartir MagicalCamera</string>
+    <string name="email_text">Hola somos los desarrolladores de MagicalCamera, \n\n Querémos compartir con usted ésta librería, MagicalCamera, para usar de una manera simple la cámara en Android nativo. \n\n Puedes ver la librería en. \n XXXX1 \n\n Y descargar la aplicación aquí: \n XXXX2 \n\n Y si puedes descargar la aplicación paga, nosotros estaremos muy agradecidos \n ver aquí: XXXX3</string>
+
+    <string name="progress_loading">Loading...</string>
+    <!-- values preference -->
+    <string name="value_directory_name">Administracion Personal</string>
+    <string name="value_photo_name">Incidencia</string>
+    <string name="value_selected_picture">Seleccione una Imágen</string>
+    <string name="value_quality_picture">80</string>
+    <string name="value_autoincrement_picture">True</string>
+    <string name="value_facial_recognition_thick">50</string>
+    <string name="value_facial_recognition_color">#0E477F</string>
+
+    <!-- menu photos-->
+    <string name="face_recognition">Face Recognition</string>
+    <string name="information_photo">Información de la imagen</string>
+    <string name="full_image">View Full Photo/Image</string>
+    <string name="rotate_picture">Rotar imagen 90º</string>
+    <!-- errors -->
+    <string name="error">Error!</string>
+    <string name="upload_error">Error al enviar Incidencia!!</string>
+    <string name="error_image_null">No hay ninguna imagen, por favor seleccione o tome una.</string>
+    <string name="error_not_connect">No puede conectarse</string>
+    <string name="error_not_have_permissions">No tiene los permisos para utilizar está funcionalidad, porfavor, acepte los permisos</string>
+    <string name="error_not_save_feedback">No pudiste enviar el mensaje, por favor intente más tarde.</string>
+    <string name="error_init_magicalcamera">Por favor inicie MagicalCamera, en un context static para usarlo en todo el activity.</string>
+    <string name="error_not_have_data">No tienes datos que mostrar, porque la ruta es incorrecta, guarda tu foto primeramente.</string>
+    <string name="error_dont_save_photo">Lo siento, su foto no pudo guardarse en el dispositivo, por favor asegurese que tiene activos los permisos de lectura y escritura.</string>
+    <string name="error_not_detect_face">La librería no detecta ningún rostro en la fotografía</string>
+    <string name="error_not_open_messenger">No se puede abrir Facebook Messenger</string>
+    <string name="error_not_open_linkedin">No se puede abrir LinkedIn</string>
+    <string name="error_not_open_youtube">YNo se puede abrir YouTube</string>
+    <string name="error_string_base_64">El String en base 64 es muy lento por favor intente de nuevo con un bitmap de menor tamaño.</string>
+    <string name="note_fragment">NOTA: Este cambio es solo reflejado en el ejemplo de Activity. El ejemplo de Fragments, siempre tiene la configuración básica, y no fue realizado con AsyncTask, para mantener la simplicidad del ejemplo.</string>
+    <!-- Messages -->
+    <string name="message_save_manual">La foto a sido guardada manualmente en el dispositivo, por favor revisa la siguiente ruta:</string>
+    <string name="message_see_photo_information">Ver la información de la imágen.</string>
+    <string name="convert_to_string_base_64_title">Ver el string en base 64, solo muestra una longitud de 300 carácteres para este ejemplo.</string>
+    <string name="convert_to_string_base_64">Convertir a String Base64</string>
+    <string name="message_ok">Aceptar</string>
+
+    <!-- Information Data -->
+    <string name="info_data_latitude">Latitud: </string>
+    <string name="info_data_latitude_referene">Referencia de Latitud: </string>
+    <string name="info_data_longitude">Longitud: </string>
+    <string name="info_data_longitude_reference">Referencia de Longitud: </string>
+    <string name="info_data_date_time_photo">Fecha y hora de la foto: </string>
+    <string name="info_data_date_stamp_photo">Fecha sello de la foto: </string>
+    <string name="info_data_ISO">ISO: </string>
+    <string name="info_data_orientation_photo">Orientación de la imágen: </string>
+    <string name="info_data_image_lenght">Alto de la imágen: </string>
+    <string name="info_data_image_width">Ancho de la imágen: </string>
+    <string name="info_data_make_company">Compañia del dispositivo: </string>
+    <string name="info_data_model_device">Modelo de dispositivo: </string>
+
+    <!-- Menu -->
+    <string name="menu_shared">Compartir</string>
+    <string name="menu_about">Acerca de Desarrolladores</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="menu_github">Github</string>
+    <string name="menu_donation">Ayúdanos</string>
+    <string name="menu_documentation">Documentación</string>
+    <string name="menu_todo_list">Siguientes tareas</string>
+    <string name="menu_terms_conditions">Términos y condiciones</string>
+    <string name="menu_hire_us">Contáctenos</string>
+
+
+    <!-- SETTINGS -->
+    <string name="tittle_settings">Configuración</string>
+    <string name="name_foto">Nombre Foto</string>
+    <string name="name_directory">Nombre de Carpeta</string>
+    <string name="shared_title_popup">Titulo de ventana Emergente</string>
+    <string name="shared_quality_photo">Porcentaje de calidad de la foto</string>
+    <string name="shared_type_extension">Tipo de Extensión</string>
+    <string name="shared_preference_extension_jpg">JPEG</string>
+    <string name="shared_preference_extension_png">PNG</string>
+    <string name="shared_autoincrement">Incremento automatico en nombre de la imágen</string>
+
+
+<!--SESSION-->
+
+    <string name="menu_sesion">Sesión</string>
+    <string name="menu_close_sesion">Cerrar Sesión</string>
+
+
+
+
+
+
+    <string name="lorem">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		In mollis est vitae erat laoreet consectetur. Mauris dui mauris,
+		dictum vel egestas vel, porta sed ante. Phasellus congue viverra ipsum,
+		in elementum arcu ultricies nec.Morbi tincidunt nisl lacinia, placerat nisi eget, luctus tortor.
+		Morbi efficitur dictum leo, sit amet volutpat lorem sodales nec. Quisque et erat et turpis fringilla condimentum.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor vulputate libero vitae iaculis.
+		Curabitur id blandit quam. Praesent massa ante, pulvinar vitae sagittis commodo, scelerisque porttitor eros.
+		Mauris suscipit a enim nec congue. Mauris tristique cursus aliquet. Nunc quis hendrerit nunc. Praesent tristique tellus purus,
+		a pretium ex gravida id. Cras laoreet malesuada nulla, at bibendum metus ultricies a. Fusce eu ornare arcu. Proin ut molestie est.
+		Vestibulum quis vehicula erat. Nam sed tempus nibh. Sed tortor ante, maximus venenatis odio sed, ultricies maximus lectus.
+		Aliquam sed volutpat ligula. Integer bibendum, magna ac lacinia suscipit,
+		risus libero rutrum justo, sed tempus augue tellus eget est. Curabitur convallis augue nisl,
+		id efficitur urna posuere faucibus. Ut sed egestas nulla, eu finibus metus. Nunc a arcu ante.
+		Aenean ullamcorper dolor non condimentum congue. Aenean mauris nunc, pellentesque at placerat vitae,
+		aliquet quis orci. Curabitur maximus augue ut bibendum sagittis.
+	</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

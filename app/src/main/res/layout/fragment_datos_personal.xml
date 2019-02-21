@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/annonce.main.coordinator"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.luis.adminpersonal.Fragments.FragmentDatosPersonal"
+tools:ignore="RtlHardcoded"
+    >
+
+<android.support.design.widget.AppBarLayout
+    android:id="@+id/flexible.example.appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    >
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/flexible.example.collapsing"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="-10dp"
+        app:contentScrim="?colorPrimary"
+        app:expandedTitleMarginBottom="100dp"
+        app:expandedTitleTextAppearance="@style/CollapsingTextAppearance.Inverse"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:title="@string/flexible_title">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/backroundpersonal"
+            android:tint="@color/md_red_500_50"  />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/materialup.profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="65dp"
+            android:elevation="8dp"
+
+            app:border_color="#FFF"
+            app:border_width="2dp"
+            app:layout_anchorGravity="top|center_horizontal"
+            app:layout_scrollFlags="scroll"
+
+            />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@null"
+            app:layout_collapseMode="pin" />
+    </android.support.design.widget.CollapsingToolbarLayout>
+</android.support.design.widget.AppBarLayout>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="80dp"
+    android:fillViewport="true"
+    android:layout_gravity="fill_vertical"
+    app:behavior_overlapTop="78dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="80dp"
+
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/flexible.example.cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPaddingBottom="20dp"
+            app:contentPaddingLeft="16dp"
+
+            app:contentPaddingRight="16dp"
+            app:cardCornerRadius="4dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardElevation="4dp"
+            android:layout_margin="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:drawableBottom="@drawable/ic_empleado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/numEmpleado_Personal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    style="@style/TextComponent.ItemRow"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="000000"
+                    android:id="@+id/textNumEmpleado"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cargo_personal"
+                    android:drawableBottom="@drawable/ic_cargo"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    style="@style/TextComponent.ItemRow"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Empleado"
+                    android:id="@+id/textCargo"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                    />
+                <TextView
+                    android:drawableBottom="@drawable/ic_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/area_personal"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    style="@style/TextComponent.ItemRow"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DGTIC"
+                    android:id="@+id/textArea"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:drawableLeft="@drawable/ic_commentario"
+                        android:drawableTint="@color/colorBlack"
+                        android:singleLine="true"
+                        android:hint="@string/observacion"
+                        android:id="@+id/observacion"
+                        android:inputType="textMultiLine" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:drawableRight="@drawable/ic_send"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnEnviar"
+                    android:text="@string/button_enviar"
+                    android:textColor="@color/md_white_1000"
+                    android:background="@drawable/button_secondary"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:elevation="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_action_scancode"
+            android:layout_marginTop="-210dp"
+            android:layout_marginRight="30dp"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

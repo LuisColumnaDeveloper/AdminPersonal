@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?colorPrimary"
+            android:title="@string/app_name"
+            android:elevation="4dp"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:title="@string/app_name"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:background="@color/md_white_1000_10"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:Card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/principalLayout"
+        android:layout_marginTop="55dp"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:paddingBottom="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/cardview1"
+                android:layout_width="match_parent"
+                android:elevation="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                app:contentPaddingBottom="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                Card_view:cardBackgroundColor="@color/md_white_1000_75">
+                <LinearLayout
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/L1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:textColor="@color/md_black_1000"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Incidencia"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:drawableLeft="@drawable/ic_commentario"
+                            android:drawableTint="@color/colorBlack"
+                            android:singleLine="true"
+                            android:hint="@string/descripcion"
+                            android:id="@+id/descripcion"
+                            android:inputType="textMultiLine" />
+                    </android.support.design.widget.TextInputLayout>
+                    <LinearLayout
+                        android:layout_weight="12"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageButton
+                            android:id="@+id/btntakephoto"
+                            style="@style/buttonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_weight="3"
+                            android:src="@drawable/ic_camara" />
+
+                        <ImageButton
+                            android:id="@+id/btnselectedphoto"
+                            style="@style/buttonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_weight="3"
+                            android:tint="@color/md_white_1000"
+                            android:src="@drawable/ic_galery" />
+
+                        <ImageButton
+                            android:id="@+id/saveImage"
+                            style="@style/buttonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_weight="3"
+                            android:src="@drawable/ic_save" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/imagepreload"
+                            android:id="@+id/previewFoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp" />
+
+
+                        <com.github.clans.fab.FloatingActionMenu
+                            android:elevation="4dp"
+                            android:id="@+id/floatingBtnMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="bottom|right"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:menu_animationDelayPerItem="50"
+                            app:menu_backgroundColor="@android:color/transparent"
+                            app:menu_colorNormal="@color/colorPrimary"
+                            app:menu_colorPressed="@color/md_white_1000"
+                            app:menu_colorRipple="@color/md_white_1000"
+                            app:menu_fab_size="mini"
+                            app:menu_icon="@drawable/ic_settingss"
+                            app:menu_labels_ellipsize="end"
+                            app:menu_labels_maxLines="2"
+                            app:menu_labels_position="left"
+                            app:menu_labels_style="@style/menu_labels_style"
+                            app:menu_openDirection="up"
+                           >
+
+
+                            <com.github.clans.fab.FloatingActionButton
+                                android:id="@+id/floatingBtnPhotoInformation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_info_outline"
+                                app:fab_colorNormal="@color/colorAccent"
+                                app:fab_colorPressed="@color/colorPrimaryDark"
+                                app:fab_colorRipple="@color/colorAccent"
+                                app:fab_label="@string/information_photo"
+                                app:fab_progress_backgroundColor="@color/colorAccent"
+                                app:fab_progress_color="@color/colorPrimaryDark"
+                                app:fab_size="mini"
+                                />
+
+
+                            <com.github.clans.fab.FloatingActionButton
+                                android:id="@+id/floatingBtnRotate"
+                                android:src="@drawable/ic_action_reload"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:fab_colorNormal="@color/colorAccent"
+                                app:fab_colorPressed="@color/colorPrimaryDark"
+                                app:fab_colorRipple="@color/colorAccent"
+                                app:fab_label="@string/rotate_picture"
+                                app:fab_progress_backgroundColor="@color/colorAccent"
+                                app:fab_progress_color="@color/colorPrimaryDark"
+                                app:fab_size="mini" />
+
+                        </com.github.clans.fab.FloatingActionMenu>
+                        <include layout="@layout/progress_dialog" />
+                    </FrameLayout>
+
+
+                    <Button
+                        android:drawableRight="@drawable/ic_send"
+                        android:drawablePadding="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnEnviar"
+                        android:text="@string/button_enviar"
+                        android:textColor="@color/md_white_1000"
+                        android:background="@drawable/button_secondary"/>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

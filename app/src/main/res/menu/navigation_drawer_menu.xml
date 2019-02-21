@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/item_navigation_drawer_inbox"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/item_navigation_drawer_escanear"
+            android:iconTint="@color/md_black_1000"
+            android:icon="@drawable/ic_action_scancode"
+            android:title="Escanear un código" />
+        <item
+            android:id="@+id/item_navigation_drawer_incidencia"
+            android:iconTint="@color/md_black_1000"
+            android:icon="@drawable/ic_incidencia"
+            android:title="Incidencia" />
+
+
+    </group>
+
+    <item android:title="@string/menu_sesion">
+        <menu>
+            <item
+                android:id="@+id/item_navigation_drawer_logout"
+                android:icon="@drawable/ic_action_import"
+                android:title="@string/menu_close_sesion" />
+        </menu>
+    </item>
+
+</menu>
